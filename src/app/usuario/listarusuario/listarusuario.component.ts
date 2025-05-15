@@ -15,6 +15,6 @@ export class ListarusuarioComponent {
   usuarioSelecciona:usuario | undefined = undefined;
 
   EditarUsuario(usuario:usuario){
-    console.log(usuario);
+    this.usuarioSelecciona = usuario;
   }
 }

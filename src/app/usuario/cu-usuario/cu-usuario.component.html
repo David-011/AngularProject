@@ -1,10 +1,10 @@
 <form>
     <div class="mb-3">
   <label for="nombre" class="form-label">Nombre</label>
-  <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+  <input type="text" *ngIf="usuario" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre" [(ngModel)]="usuario.nombre">
 </div>
 <div class="mb-3">
   <label for="fecharegistro" class="form-label">Fecha Registro</label>
-  <input class="form-control" id="fecharegistro" type="datetime-local">
+  <input class="form-control" id="fecharegistro" type="datetime-local" *ngIf="usuario" name="fecharegistro" [(ngModel)]="usuario.fecharegistro">
 </div>
 </form>
