@@ -15,7 +15,7 @@
                 <td>{{us.nombre}}</td>
                 <td>{{us.fecharegistro}}</td>
                 <td>
-                    <button class="btn btn-warning me-1" data-bs-toggle="modal" data-bs-target="#modalusuario">Editar</button>
+                    <button class="btn btn-warning me-1" data-bs-toggle="modal" data-bs-target="#modalusuario" (click)="EditarUsuario(us)">Editar</button>
                     <button class="btn btn-danger">Eliminar</button>
                 </td>
               </tr>

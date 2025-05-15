@@ -11,4 +11,10 @@ export class ListarusuarioComponent {
     {id: 1, nombre: "David", fecharegistro: new Date()},
     {id: 2, nombre: "Mateo", fecharegistro: new Date()}
   ];
+
+  usuarioSelecciona:usuario | undefined = undefined;
+
+  EditarUsuario(usuario:usuario){
+    console.log(usuario);
+  }
 }
