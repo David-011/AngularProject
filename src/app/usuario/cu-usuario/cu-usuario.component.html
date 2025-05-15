@@ -5,6 +5,6 @@
 </div>
 <div class="mb-3">
   <label for="fecharegistro" class="form-label">Fecha Registro</label>
-  <input class="form-control" id="fecharegistro" type="datetime-local" *ngIf="usuario" name="fecharegistro" [(ngModel)]="usuario.fecharegistro">
+  <input class="form-control" id="fecharegistro" type="datetime-local" *ngIf="usuario" name="fecharegistro" [ngModel]="formatDatetimeLocal(usuario.fecharegistro)" (ngModelChange)="updateFecha($event)">
 </div>
 </form>

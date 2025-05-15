@@ -13,7 +13,7 @@
               <tr *ngFor="let us of VectorUsuario">
                 <th scope="row">{{us.id}}</th>
                 <td>{{us.nombre}}</td>
-                <td>{{us.fecharegistro}}</td>
+                <td>{{us.fecharegistro | date:'dd/MM/yyyy HH:mm' }}</td>
                 <td>
                     <button class="btn btn-warning me-1" data-bs-toggle="modal" data-bs-target="#modalusuario" (click)="EditarUsuario(us)">Editar</button>
                     <button class="btn btn-danger">Eliminar</button>
