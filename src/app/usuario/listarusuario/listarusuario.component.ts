@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { usuario } from '../../models/usuario';
 
 @Component({
   selector: 'app-listarusuario',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './listarusuario.component.css'
 })
 export class ListarusuarioComponent {
-
+  VectorUsuario: usuario[]= [
+    {id: 1, nombre: "David", fecharegistro: new Date()},
+    {id: 2, nombre: "Mateo", fecharegistro: new Date()}
+  ];
 }
